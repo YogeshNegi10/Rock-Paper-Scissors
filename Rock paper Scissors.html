@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper and Scissors</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="gameContainer">
+      <h1>Rock. Paper. and Scissors.</h1>
+
+      <button
+        disabled
+        class="js-disabled-btns disabled active"
+        onclick=" playGame('rock');"
+      >
+        <img src="/images/rock.png" alt="" />
+      </button>
+
+      <button
+        disabled
+        class="js-disabled-btns disabled active"
+        onclick="playGame('paper')"
+        ;
+      >
+        <img src="/images/paper.png" alt="" />
+      </button>
+
+      <button
+        disabled
+        class="js-disabled-btns disabled active"
+        onclick="playGame('scissor');"
+      >
+        <img src="/images/scissor.png" alt="" />
+      </button>
+
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score"></p>
+
+      <button disabled class="reset-btn js-disabled-btns active">Reset Score</button>
+      <button disabled class="autoPlay-btn js-disabled-btns active">AutoPlay</button>
+      <br />
+      <br />
+      <button class="startGame" style="cursor: pointer">Start The Game</button>
+
+      <p class="js-apply">
+        Click <a href="">Here to See the Final Project or Use This</a>
+
+        <div class="hintBox">
+          <h5>Play with your Keyboard</h5>
+          <ul>
+            <li>Press 'r' to play with rock.</li>
+            <li>Press 'p' to play with paper.</li>
+            <li>Press 's' to play with scissors.</li>
+            <li>Press 'a' to autoplay.</li>
+            <li>Press 'backspace' to reset.</li>
+         </ul>
+        </div>
+        <button class="hintBtn">Hints</button>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*  <---- Body Css ----> */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+
+body h1 {
+  font-size: 60px;
+  margin: 50px 0;
+}
+
+img {
+  height: 50px;
+}
+
+/*  <---- hintBtn Css ----> */
+
+.hintBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: none;
+  background-color: rgb(201, 184, 184);
+  padding: 6px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+
+/*  <---- HintBox Css ----> */
+
+.hintBox {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  background-color: rgb(201, 184, 184);
+  color: black;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+
+}
+
+.hintBox.active {
+  opacity: 1;
+}
+
+.hintBox ul li {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.hintBox h5 {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*  <---- closeBtn Css ----> */
+
+
+.closeBtn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/*  <---- HintBox Css ----> */
+
+.disabled {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.disabled.active {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/*  <---- reset btn, autoplay btn Css ----> */
+
+.reset-btn,
+.autoPlay-btn {
+  height: 30px;
+  width: 100px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid white;
+}
+.reset-btn:active,
+.autoPlay-btn:active,
+.disabled:active {
+  transform: scale(0.9);
+}
+
+.reset-btn.active {
+  pointer-events: none;
+}
+
+/*  <---- start Game css ----> */
+
+.startGame {
+  border: none;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+.startGame:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.startGame:active {
+  transform: scale(0.9);
+}
+
+/*  <---- js-score Css ----> */
+.js-score {
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+/*  <---- js-result Css ----> */
+.js-result {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px;
+}
+
+/*  <---- js-confirm Css ----> */
+.js-confirm {
+  cursor: pointer;
+  
+}
+
+
+/*  <---- for responsive design ----> */
+
+@media screen and (max-width: 768px){
+
+   body h1{
+
+    font-size: 40px;
+    margin: 40px;
+   }
+
+   .hintBox{
+    height: 150px;
+    width: 250px;
+    font-size: 10px;
+   }
+   .hintBox h5{
+    font-size: 14px;
+   }
+   .hintBox ul li{
+    font-size: 10px;
+   }
+
+   .disabled {
+
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+   }
+
+}
+@media screen and (max-width: 425px){
+
+   body h1{
+
+    font-size: 27px;
+    margin: 20px;
+   }
+
+   .hintBox{
+    height: 150px;
+    width: 250px;
+    font-size: 10px;
+   }
+   .hintBox h5{
+    font-size: 14px;
+   }
+   .hintBox ul li{
+    font-size: 10px;
+   }
+
+   .disabled {
+
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+   }
+   .disabled img {
+
+    height: 30px;
+    width: 30px;
+    
+   }
+
+}
+@media screen and (max-width: 375px){
+
+   body h1{
+
+    font-size: 25px;
+    margin: 20px;
+   }
+
+   .hintBox{
+    height: 150px;
+    width: 250px;
+    font-size: 10px;
+   }
+   .hintBox h5{
+    font-size: 14px;
+   }
+   .hintBox ul li{
+    font-size: 10px;
+   }
+
+   .disabled {
+
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+   }
+   .disabled img {
+
+    height: 30px;
+    width: 30px;
+    
+   }
+
+}
